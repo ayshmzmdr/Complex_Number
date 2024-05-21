@@ -6,9 +6,9 @@ class ComplexNo:
         self.ans=f"{self.real}+{self.imag}i" 
         if "+0i" in self.ans:                          
             self.ans=f"{self.real}"
-        elif "+1i" in self.ans:
+        elif "+1i" in self.ans or "+1.0i" in self.ans:
             self.ans=f"{self.real}+i"
-        elif "-1i" in self.ans:
+        elif "-1i" in self.ans or "-1.0i" in self.ans:
             self.ans=f"{self.real}-i"
         elif "+-" in self.ans:
             self.ans=f"{self.real}{self.imag}i"
